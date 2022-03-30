@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_text_main"
+        android:layout_marginStart="5dp"
+        android:text="A"
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:padding="5dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/alert_text_main"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:text="A"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler"
+                android:layout_weight="9.4"
+                />
+            <com.example.hj.siderbar.AlphabetView
+                android:layout_width="0dp"
+                android:id="@+id/alpha"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
